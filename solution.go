@@ -11,9 +11,11 @@ import "math"
 func CalcSquare(sideLen float64, sidesNum int) float64 {
 	if sidesNum == 4 {
 		return math.Pow(sideLen, 2) 
-	} else if sideNum == 3 {
+	}
+	if sideNum == 3 {
 		return math.Pow(sideLen, 2) * math.Sqrt(3) / 4
-	} else if sideNum == 0 {
+	}
+	if sideNum == 0 {
 		return math.Pow(sideLen, 2) * math.Pi / 4
 	}
 	return 0
