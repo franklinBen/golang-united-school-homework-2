@@ -7,6 +7,14 @@ package square
 // CalcSquare(10.0, SidesTriangle)
 // CalcSquare(10.0, SidesSquare)
 // CalcSquare(10.0, SidesCircle)
-
-func CalcSquare(sideLen float64, sidesNum #yourTypeNameHere#) float64 {
+import "math"
+func CalcSquare(sideLen float64, sidesNum int) float64 {
+	if sidesNum == 4 {
+		return math.Pow(sideLen, 2) 
+	} else if sideNum == 3 {
+		return a*a*math.Sqrt(3) / 4
+	} else if sideNum == 0 {
+		return math.Pow(sideLen, 2) * math.Pi / 4
+	}
+	return 0
 }
