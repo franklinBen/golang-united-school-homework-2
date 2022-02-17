@@ -9,7 +9,7 @@ package square
 // CalcSquare(10.0, SidesCircle)
 import "math"
 func CalcSquare(sideLen float64, sidesNum int) float64 {
-	switch sideNum {
+	switch sidesNum {
 		case 4:
 			return math.Pow(sideLen, 2)
 		case 3:
